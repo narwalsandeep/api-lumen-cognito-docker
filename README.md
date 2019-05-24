@@ -13,35 +13,35 @@ Lumen based Full RESTful API using AWS Cognito
 This set of API runs on Docker Container.
 Sourecode for Lumen and Docker files can be collected from below URL.
 
-Setup .env config
+Setup .env config (Only AWS_ are required)
 --------------------
-APP_NAME=Auth
-APP_ENV=local
-APP_KEY=
-APP_DEBUG=true
-APP_URL=
-APP_TIMEZONE=UTC
+- APP_NAME=Auth
+- APP_ENV=local
+- APP_KEY=
+- APP_DEBUG=true
+- APP_URL=
+- APP_TIMEZONE=UTC
 
-LOG_CHANNEL=stack
-LOG_SLACK_WEBHOOK_URL=
+- LOG_CHANNEL=stack
+- LOG_SLACK_WEBHOOK_URL=
 
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=
-DB_USERNAME=
-DB_PASSWORD=
+- DB_CONNECTION=mysql
+- DB_HOST=127.0.0.1
+- DB_PORT=3306
+- DB_DATABASE=
+- DB_USERNAME=
+- DB_PASSWORD=
 
-CACHE_DRIVER=file
-QUEUE_CONNECTION=sync
+- CACHE_DRIVER=file
+- QUEUE_CONNECTION=sync
 
-AWS_KEY=
-AWS_SECRET=
-AWS_REGION=
-AWS_VERSION=latest
-AWS_APP_CLIENT_ID=
-AWS_APP_CLIENT_SECRET=
-AWS_USER_POOL_ID=
+- AWS_KEY=
+- AWS_SECRET=
+- AWS_REGION=
+- AWS_VERSION=latest
+- AWS_APP_CLIENT_ID=
+- AWS_APP_CLIENT_SECRET=
+- AWS_USER_POOL_ID=
 
 
 Building and runninng
