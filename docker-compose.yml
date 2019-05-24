@@ -1,0 +1,21 @@
+version: "3.2"
+services:
+  php:
+    container_name: lumen
+    build:
+      context: ./
+    ports:
+      - "9991:80"
+    environment:
+      APP_ENV: local
+      APP_DEBUG: 'true'
+      APP_KEY: SomeRandomKey!!!
+      APP_LOCALE: en
+      APP_FALLBACK_LOCALE: en
+      DB_CONNECTION: mysql
+      DB_HOST: db
+      DB_DATABASE: lumen
+      DB_USERNAME: lumen
+      DB_PASSWORD: secret
+      MEMCACHED_HOST: cache
+      CACHE_DRIVER: memcached
