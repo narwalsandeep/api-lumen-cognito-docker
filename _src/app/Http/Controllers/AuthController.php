@@ -58,7 +58,7 @@ class AuthController extends Controller
 
         try {
             $this->cognito->confirmUserRegistration($x['code'], $x['username']);
-            return $this->make(true, C::SUCC_CREATED_SUCCESSFULLY_AND_CONFIRMED);
+            return $this->make(true, C::SUCC_CONFIRMED_SUCCESSFULLY);
         } catch (\pmill\AwsCognito\Exception\CodeMismatchException $e) {
             return $this->make(false, C::ERR_INVALID_VERIFICATION_CODE);
         } catch (\Exception $e) {

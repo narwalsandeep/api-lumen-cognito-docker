@@ -12,7 +12,7 @@
 */
 
 $router->get('/', function () use ($router) {
-    return $router->app->version();
+    return $router->app->version()." <br>".__FILE__;
 });
 
 $router->get ( 'test', [ 

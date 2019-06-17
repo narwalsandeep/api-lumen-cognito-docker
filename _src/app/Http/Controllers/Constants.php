@@ -7,6 +7,7 @@ class Constants
 	const SUCC_LOADED_SUCCESSFULLY = "Loaded successfully";
 	const SUCC_CREATED_SUCCESSFULLY = "Created successfully";
 	const SUCC_UPDATED_SUCCESSFULLY = "Updated successfully";
+	const SUCC_CONFIRMED_SUCCESSFULLY = "Confirmed successfully";
 	const SUCC_DELETED_SUCCESSFULLY = "Deleted successfully";
 
 	const ERR_UNKNOWN_ERROR = "Unknown error, please try again";

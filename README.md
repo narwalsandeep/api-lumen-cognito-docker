@@ -13,6 +13,9 @@ Lumen based Full RESTful API using AWS Cognito
 This set of API runs on Docker Container.
 Sourecode for Lumen and Docker files can be collected from below URL.
 
+** Do not forgot to enavle Cors on Lumen if needed.
+** Also chmod -R 0777 _src/storage if needed
+
 Setup .env config (Only AWS_ are required)
 --------------------
 - APP_NAME=Auth
